@@ -1,44 +1,43 @@
-# Application-e-commerce
+# 🛒 Boutique en ligne - Projet E-commerce
 
-This template should help get you started developing with Vue 3 in Vite.
+Ce projet est une **boutique en ligne moderne** développée avec Vue.js. Il permet aux utilisateurs de parcourir des produits, ajouter des articles à leur panier et simuler un paiement dans une interface élégante et interactive.
 
-## Recommended IDE Setup
+L’objectif est de créer une expérience utilisateur proche des véritables sites e-commerce, avec un design responsive et des animations fluides.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+---
 
-## Recommended Browser Setup
+## ✨ Fonctionnalités principales
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- **Catalogue de produits dynamique** : affiche tous les produits avec image, prix, note et détails.  
+- **Page détail produit** : voir toutes les informations d’un produit avant l’achat.  
+- **Gestion du panier** :  
+  - Ajouter ou retirer des produits  
+  - Modifier les quantités  
+  - Calcul automatique du total  
+- **Paiement simulé** : formulaire de paiement avec validation et message de succès.  
+- **Interface responsive** : adapté aux mobiles, tablettes et grands écrans.  
+- **Animations et interactions** : transitions fluides pour un rendu plus immersif.  
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 📸 Aperçu de l’interface
 
-## Project Setup
+![Capture de l'interface](./src/assets/E-commerce_2.png)
 
-```sh
-npm install
-```
+---
 
-### Compile and Hot-Reload for Development
+## ⚡ Technologies utilisées
 
-```sh
-npm run dev
-```
+- [Vue.js 3](https://vuejs.org/) pour le front-end  
+- Composition API pour la gestion des états et événements  
+- CSS3 et Flexbox/Grid pour le layout et le responsive  
+- Animations CSS pour les interactions utilisateur  
+- LocalStorage pour sauvegarder le contenu du panier  
 
-### Compile and Minify for Production
+---
 
-```sh
-npm run build
-```
+## 🚀 Comment utiliser
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+1. Clonez ce dépôt :  
+```bash
+git clone https://github.com/Calebdami/Projet_Application_e_commerce_Vue_JS.git
