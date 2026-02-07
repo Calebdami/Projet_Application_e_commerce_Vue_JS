@@ -14,7 +14,7 @@
 </script>
 
 <template>
-    <div v-if="product">
+    <div class="product-details" v-if="product">
         <button @click="router.push('/products')">Retour aux produits</button>
         
         <h1>{{ product.title }}</h1>

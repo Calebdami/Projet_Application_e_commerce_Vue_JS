@@ -26,10 +26,12 @@
 </script>
 
 <template>
-    <nav>
-        <router-link to="/">Accueil</router-link> |
-        <router-link to="/products">Produits</router-link> |
-        <router-link to="/cart">Panier ({{ cart.length }})</router-link>
+    <nav class="navbar">
+        <div class="navbar-links">
+            <router-link to="/">Accueil</router-link> |
+            <router-link to="/products">Produits</router-link> |
+            <router-link to="/cart">Panier ({{ cart.length }})</router-link>
+        </div>
     </nav>
-    <router-view :cart="cart" @add-to-cart="addToCart"  @remove-from-cart="removeFromCart" @clear-cart="clearCart"/>
+    <router-view class="page" :cart="cart" @add-to-cart="addToCart"  @remove-from-cart="removeFromCart" @clear-cart="clearCart"/>
 </template>

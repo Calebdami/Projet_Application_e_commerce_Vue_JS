@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="cart-item">
         <img :src="item.thumbnail" :alt="item.title" width="50">
         <span>{{ item.title }}</span>
         <span>Prix : {{ item.price }} $</span>
@@ -16,6 +16,6 @@
             <button @click="emit('remove_1', item.id)">-</button>
         </div>
         <span>Sous-total : {{ item.price * item.quantity }} $</span>
-        <button @click="emit('remove', item.id)">Supprimer</button>
+        <button class="remove-btn" @click="emit('remove', item.id)">Supprimer</button>
     </div>
 </template>

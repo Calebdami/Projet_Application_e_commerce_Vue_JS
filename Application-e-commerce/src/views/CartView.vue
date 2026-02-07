@@ -9,7 +9,13 @@
 
     // Calcul du total général avec une propriété calculée (computed)
     const totalGeneral = computed(() => {
-        return props.cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        function formatDecimal(n) {
+            if (!Number.isFinite(n)) return '';
+            const r = Math.round(n * 100) / 100;
+            return r % 1 === 0 ? '' : r.toString();
+        }
+        const price = props.cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        return formatDecimal(price);
     });
 
     const gererSuccesPaiement = () => {
@@ -37,12 +43,14 @@
         <div v-if="cart.length > 0">
             <CartItem v-for="item in cart" :key="item.id" :item="item" @remove="emit('remove-from-cart', $event)" @remove_1="remove_1(item)" @add_1="add_1(item)"/>
             <hr>
-            <h3>Total Général : {{ totalGeneral }} $</h3>
+            <div class="cart-total">
+                Total Général : {{ totalGeneral }} $
+            </div>
             <hr>
-            <PaymentForm  :cartLength="cart.length" @payment-success="gererSuccesPaiement"/>
+            <PaymentForm class="paymentform" :cartLength="cart.length" @payment-success="gererSuccesPaiement"/>
         </div>
     
-        <div v-else>
+        <div v-else class="cart-empty">
             <p>Votre panier est vide.</p>
             <router-link to="/products">Retourner à la boutique</router-link>
         </div>

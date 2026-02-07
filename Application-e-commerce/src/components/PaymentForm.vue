@@ -30,10 +30,10 @@
 </script>
 
 <template>
-    <div>
+    <div class="payment">
         <h2>Paiement</h2>
         <div v-if="messageSucces">
-            <p>✅ Paiement effectué avec succès !</p>
+            <p class="success">✅ Paiement effectué avec succès !</p>
         </div>
         
         <form v-else @submit.prevent="validerPaiement">

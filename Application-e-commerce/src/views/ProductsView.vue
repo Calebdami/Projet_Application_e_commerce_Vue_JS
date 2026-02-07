@@ -15,7 +15,7 @@
 <template>
     <div>
         <h1>Nos Produits</h1>
-        <div v-if="products.length > 0">
+        <div class="products-grid" v-if="products.length > 0">
             <ProductCard class="products-container" v-for="p in products" :key="p.id" :product="p" @add-to-cart="emit('add-to-cart', $event)"/>
         </div>
         <p v-else>Chargement...</p>
