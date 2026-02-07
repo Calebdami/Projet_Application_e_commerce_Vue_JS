@@ -22,7 +22,7 @@ L’objectif est de créer une expérience utilisateur proche des véritables si
 
 ## 📸 Aperçu de l’interface
 
-![Capture de l'interface](./src/assets/E-commerce_2.png)
+![Capture de l'interface](/assets/E-commerce_2.png)
 
 ---
 
