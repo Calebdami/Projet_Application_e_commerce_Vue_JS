@@ -1,7 +1,14 @@
 /* =============================
    THEME E‑COMMERCE – ANIMATED / MODERN
    ============================= */
-:root {
+@font-face {
+    font-family: 'GloriaHallelujah';
+    src: url('./fonts/GloriaHallelujah-Regular.ttf') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+   :root {
   --primary: #0f172a;
   --accent: #6366f1;
   --accent-2: #22c55e;
@@ -14,9 +21,10 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    font-family: 'GloriaHallelujah';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
